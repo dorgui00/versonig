@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health = 3;  // Points de vie du joueur
-
-    // Fonction pour infliger des dégâts au joueur
+    public int health = 3;  
+   
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -12,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            Die();  // Si les points de vie atteignent zéro, le joueur meurt
+            Die();  
         }
     }
 
