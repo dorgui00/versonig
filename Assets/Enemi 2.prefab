@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4129122496202254004}
   - component: {fileID: 7260727396806700142}
-  - component: {fileID: -4063035201260993197}
-  - component: {fileID: 5153853839416099475}
+  - component: {fileID: 7258686057302266535}
+  - component: {fileID: 3584825455406091827}
   m_Layer: 0
-  m_Name: Enemi 1
+  m_Name: Enemi 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-4063035201260993197
+--- !u!114 &7258686057302266535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,11 +95,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 242201805504779036}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f4372bdadbbc3b4586b61c9190a1b91, type: 3}
+  m_Script: {fileID: 11500000, guid: b1b516def66b72d4185ba572923148ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
---- !u!114 &5153853839416099475
+  projectilePrefab: {fileID: 3059648296479805370, guid: 9a689fcfa6fbbfd4cace4b58bffb8f01, type: 3}
+  shootInterval: 1
+  projectileSpeed: 2
+--- !u!114 &3584825455406091827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
