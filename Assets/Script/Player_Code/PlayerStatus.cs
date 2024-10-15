@@ -8,11 +8,13 @@ public class PlayerStatus : MonoBehaviour
 {
     public int Health = 100;
     public Text text;
+    public GameObject menuMort;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        menuMort.SetActive(false);
 
     }
 
@@ -21,7 +23,7 @@ public class PlayerStatus : MonoBehaviour
     {
         if (Health <= 0)
         {
-
+            menuMort.SetActive(true);
         }
         text.text = Health.ToString();
 
