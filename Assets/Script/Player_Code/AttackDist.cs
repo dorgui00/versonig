@@ -62,6 +62,27 @@ public class AttackDIST : MonoBehaviour
             // 1. Si le sprite est retourner (donc regarde à droite) 
             projectilSave = Instantiate(projectil, posAttack.transform.position, Quaternion.identity);
             projectilSave1 = Instantiate(projectil, posAttack1.transform.position, Quaternion.identity);
+
+            //missile 1
+            Rigidbody2D rb = projectilSave.GetComponent<Rigidbody2D>();
+            // Désactiver la gravité
+            rb.gravityScale = 0f;
+            // Propulse vers le haut
+            rb.velocity = new Vector2(0f, speedMissile);
+
+            //missile 2
+            Rigidbody2D rb1 = projectilSave1.GetComponent<Rigidbody2D>();
+            // Désactiver la gravité
+            rb1.gravityScale = 0f;
+            // Propulse vers le haut
+            rb1.velocity = new Vector2(0f, speedMissile);
+        }
+
+        if (LVL == 2)
+        {
+            // 1. Si le sprite est retourner (donc regarde à droite) 
+            projectilSave = Instantiate(projectil, posAttack.transform.position, Quaternion.identity);
+            projectilSave1 = Instantiate(projectil, posAttack1.transform.position, Quaternion.identity);
             projectilSave2 = Instantiate(projectil, posAttack2.transform.position, Quaternion.identity);
 
             //missile 1

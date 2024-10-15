@@ -17,32 +17,19 @@ public class MissilePlayer : MonoBehaviour
     {
         if (truc.tag == "Enemy")
         {                 // Si le truc qu'on touche a le tag "Ennemi"
-            //truc.SendMessage("MonstreRang0LostHealth", degats); // On cherche sur lui une fonction qui s'appel "takeDamage", et on la lance en lui donnant le nombre de dégat qu'on fait
+            //truc.SendMessage("MonstreRang0LostHealth", degats); 
             Destroy(gameObject);
         }
         //else if (!truc.isTrigger && truc.tag != "Player")
         //{
         //    Destroy(gameObject);
         //}
-        Destroy(gameObject, 10);
+        //Destroy(gameObject, 10);
     }
 
     private void Update()
     {
-        if (levelFireBall == 1)
-        {
-            degats = 1;
-        }
-
-        if (levelFireBall == 2)
-        {
-            degats = 10;
-        }
-
-        if (levelFireBall == 3)
-        {
-            degats = 50;
-        }
+        
     }
 
 }
