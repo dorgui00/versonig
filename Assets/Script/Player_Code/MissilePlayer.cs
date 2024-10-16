@@ -24,12 +24,12 @@ public class MissilePlayer : MonoBehaviour
         //{
         //    Destroy(gameObject);
         //}
-        //Destroy(gameObject, 10);
+        
     }
 
     private void Update()
     {
-        
+        Destroy(gameObject, lifeTime);
     }
 
 }
