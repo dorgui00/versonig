@@ -36,7 +36,7 @@ public class zoneTire : MonoBehaviour
             //j.TireAuto(); 
             //k.TireAuto();
             //m.TireAuto();
-           // n.TireAuto();
+            //n.TireAuto();
             //o.TireAuto();
             //p.TireAuto();
             //t.TireAuto();
