@@ -25,6 +25,10 @@ public class AttackDIST : MonoBehaviour
     public float nexAttackTime = 0.5f;
     private bool reloading;
 
+    //son
+    public AudioSource audioSource;
+    public AudioClip sound;
+
 
     private SpriteRenderer skin;
 
@@ -44,6 +48,7 @@ public class AttackDIST : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1) && !reloading)
         {
+            audioSource.PlayOneShot(sound);
             TireEnHaut();
             reloading = true;
             StartCoroutine(NextAttack());
