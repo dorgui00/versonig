@@ -21,6 +21,11 @@ public class AttackDIST : MonoBehaviour
 
     public float lifeTime = 0f;
 
+    //prochaine attaque
+    public float nexAttackTime = 0.5f;
+    private bool reloading;
+
+
     private SpriteRenderer skin;
 
     //private Animator anim;
@@ -37,10 +42,13 @@ public class AttackDIST : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !reloading)
         {
             TireEnHaut();
+            reloading = true;
+            StartCoroutine(NextAttack());
         }
+
     }
 
     void TireEnHaut()
@@ -106,6 +114,14 @@ public class AttackDIST : MonoBehaviour
             // Propulse vers le haut
             rb2.velocity = new Vector2(0f, speedMissile);
         }
+
+    }
+
+    // Voici la coroutine waitShoot
+    IEnumerator NextAttack()
+    {
+        yield return new WaitForSeconds(nexAttackTime);
+        reloading = false;
     }
 
 

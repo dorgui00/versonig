@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 771023659}
   - component: {fileID: 771023662}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Capsule_Victoire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1485,7 +1485,7 @@ MonoBehaviour:
   posAttack1: {fileID: 1460751660}
   posAttack2: {fileID: 1549644355}
   LVL: 0
-  speedMissile: 4
+  speedMissile: 5
   lifeTime: 5
 --- !u!50 &1677290891
 Rigidbody2D:
