@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Power_Up : MonoBehaviour
 {
@@ -19,11 +21,19 @@ public class Power_Up : MonoBehaviour
     public float tempsDureePowerUp = 0f;
     public int powerUpOn = 0;
 
+    //Image power up
+    public Image tirX2;
+    public Image tirX3;
+    public Image tirX3Rapide;
+
 
     // Start is called before the first frame update
     void Start()
     {
         oldSpeedMissile = atkPlayer.speedMissile;
+        tirX2.enabled = false;
+        tirX3.enabled = false;
+        tirX3Rapide.enabled = false;
     }
 
     // Update is called once per frame
@@ -43,6 +53,9 @@ public class Power_Up : MonoBehaviour
             atkPlayer.speedMissile = oldSpeedMissile;
             atkPlayer.LVL = 0;
             powerUpOn = 0;
+            tirX2.enabled = false;
+            tirX3.enabled = false;
+            tirX3Rapide.enabled = false;
         }
 
     }
@@ -55,6 +68,7 @@ public class Power_Up : MonoBehaviour
             powerUpTirRapide = 0;
             atkPlayer.LVL = 1;
             powerUpOn = 1;
+            tirX2.enabled = true;
         }
 
         if (collision.CompareTag("Player") && powerUpTirX3 == 1)
@@ -63,6 +77,7 @@ public class Power_Up : MonoBehaviour
             powerUpTirRapide = 0;
             atkPlayer.LVL = 2;     
             powerUpOn = 1;
+            tirX3.enabled = true;
         }
 
         if (collision.CompareTag("Player") && powerUpTirRapide == 1)
@@ -71,6 +86,7 @@ public class Power_Up : MonoBehaviour
             powerUpTirX3 = 0;
             atkPlayer.speedMissile = newSpeedMissile;
             powerUpOn = 1;
+            tirX3Rapide.enabled = true;
         }
     }
 
