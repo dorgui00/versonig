@@ -2086,6 +2086,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 850693918259702489, guid: 9b979aad20e02e948839644327e93d07, type: 3}
+      propertyPath: debut
+      value: Scene_Victoire
+      objectReference: {fileID: 0}
+    - target: {fileID: 850693918259702489, guid: 9b979aad20e02e948839644327e93d07, type: 3}
       propertyPath: menuVictoire
       value: 
       objectReference: {fileID: 1687816388}
@@ -2210,6 +2214,10 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1510219481}
+    - target: {fileID: 8515375089552424725, guid: 2264ef3f917d47b46aeceb92f5afb3c4, type: 3}
+      propertyPath: debut
+      value: Scene_Defaite
+      objectReference: {fileID: 0}
     - target: {fileID: 8515375089552424725, guid: 2264ef3f917d47b46aeceb92f5afb3c4, type: 3}
       propertyPath: menuMort
       value: 
