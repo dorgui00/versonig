@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerStatus : MonoBehaviour
 {
     public int Health = 100;
     public Text text;
-    public GameObject menuMort;
+    public string debut;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        menuMort.SetActive(false);
 
     }
 
@@ -23,7 +23,7 @@ public class PlayerStatus : MonoBehaviour
     {
         if (Health <= 0)
         {
-            menuMort.SetActive(true);
+           SceneManager.LoadScene(debut);
         }
         text.text = Health.ToString();
 
