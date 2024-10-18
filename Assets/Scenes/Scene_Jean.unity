@@ -1705,6 +1705,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1642659626}
     - target: {fileID: 1470522109333131856, guid: fd52252b7542508459edd757d8279c6e, type: 3}
+      propertyPath: atkPlayer
+      value: 
+      objectReference: {fileID: 42471421}
+    - target: {fileID: 1470522109333131856, guid: fd52252b7542508459edd757d8279c6e, type: 3}
       propertyPath: tirX3Rapide
       value: 
       objectReference: {fileID: 723319297}
