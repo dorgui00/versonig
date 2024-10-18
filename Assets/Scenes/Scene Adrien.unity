@@ -1204,6 +1204,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 850693918259702489, guid: 9b979aad20e02e948839644327e93d07, type: 3}
+      propertyPath: debut
+      value: Scene_Jean
+      objectReference: {fileID: 0}
     - target: {fileID: 1776939231815556393, guid: 9b979aad20e02e948839644327e93d07, type: 3}
       propertyPath: m_Color.b
       value: 0
