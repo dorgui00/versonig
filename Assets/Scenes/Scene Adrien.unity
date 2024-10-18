@@ -651,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 6423611464823683509, guid: 92695b89c4ff7bf44991ca928d737491, type: 3}
     - target: {fileID: 7671817693783220686, guid: 2264ef3f917d47b46aeceb92f5afb3c4, type: 3}
       propertyPath: speedMissile
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
