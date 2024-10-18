@@ -10,14 +10,21 @@ public class EnemyShooter : MonoBehaviour
 
     private bool canShoot = false;
 
+    // Reference to the Animator component
+    private Animator animator;
+
     private void Start()
     {
+        // Get the Animator component from the GameObject
+        animator = GetComponent<Animator>();
+
+        // Start shooting projectiles
         StartCoroutine(ShootProjectiles());
     }
 
     private void Update()
     {
-        // Optional: You could check for player proximity here, if needed
+        // Optional: You could check for player proximity or other conditions here
     }
 
     private IEnumerator ShootProjectiles()
@@ -27,8 +34,15 @@ public class EnemyShooter : MonoBehaviour
             // Wait for the shoot interval only if canShoot is true
             if (canShoot)
             {
+                // Trigger shooting animation
+                if (animator != null)
+                {
+                    animator.SetTrigger("Shoot");
+                }
+
                 yield return new WaitForSeconds(shootInterval);
 
+                // Instantiate and shoot the projectile
                 GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
                 if (rb != null)
@@ -43,9 +57,9 @@ public class EnemyShooter : MonoBehaviour
         }
     }
 
+    // Enable shooting (can be called from other scripts or events)
     public void TireAuto()
     {
         canShoot = true;
     }
-    
 }

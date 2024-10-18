@@ -13,11 +13,18 @@ public class MissilePlayer : MonoBehaviour
 
 
     // La fonction OnTriggerEnter s'enclenche quand votre Trigger touche un autre collider/trigger
-    void OnTriggerEnter2D(Collider2D truc)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (truc.tag == "Enemy")
+        if (other.CompareTag("Enemy") )
         {                 // Si le truc qu'on touche a le tag "Ennemi"
-            //truc.SendMessage("MonstreRang0LostHealth", degats); 
+            EnemyHealth playerHealth = other.GetComponent<EnemyHealth>();  
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(degats);  
+            }
+
+            
+            Destroy(gameObject);
             Destroy(gameObject);
         }
         //else if (!truc.isTrigger && truc.tag != "Player")
