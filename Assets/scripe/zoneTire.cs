@@ -29,7 +29,7 @@ public class zoneTire : MonoBehaviour
             b.TireAuto();
             c.TireAuto();
             d.TireAuto();
-            e.TireAuto();
+            //e.TireAuto();
             //f.TireAuto();
             //g.TireAuto(); 
             //h.TireAuto();
