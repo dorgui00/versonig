@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene_Rayan.unity
     guid: 3bfcd138161511640a05a5273622f830
+  - enabled: 1
+    path: Assets/Scenes/Scene_Victoire.unity
+    guid: 9b24dbf4c1403a14aa2816c9f377ee0a
+  - enabled: 1
+    path: Assets/Scenes/Scene_Defaite.unity
+    guid: 46a4cc231152e3e4bb6e464d547fd49c
   m_configObjects: {}

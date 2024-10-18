@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class VICTOIRE : MonoBehaviour
 {
-
-    public GameObject menuVictoire;
+    public string debut;
 
     // Start is called before the first frame update
     void Start()
     {
-            menuVictoire.SetActive(false);
+           
     }
 
     // Update is called once per frame
@@ -23,7 +25,7 @@ public class VICTOIRE : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            menuVictoire.SetActive(true);
+            SceneManager.LoadScene(debut);
         }
     }
 }
