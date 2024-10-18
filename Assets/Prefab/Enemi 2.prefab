@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3059648296479805370, guid: 9a689fcfa6fbbfd4cace4b58bffb8f01, type: 3}
   ZoneTire: {fileID: 0}
-  shootInterval: 1
+  shootInterval: 2
   projectileSpeed: 2
 --- !u!114 &3584825455406091827
 MonoBehaviour:

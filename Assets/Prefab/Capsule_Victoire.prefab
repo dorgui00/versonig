@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6139091587619708269}
   - component: {fileID: 1776939231815556393}
-  - component: {fileID: 6186908300481605042}
   - component: {fileID: 850693918259702489}
   m_Layer: 0
   m_Name: Capsule_Victoire
@@ -86,41 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &6186908300481605042
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5657570254649064358}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
 --- !u!114 &850693918259702489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,4 +97,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ed9e5b22d371347b7704f25d6d4e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuVictoire: {fileID: 0}
+  debut: 
