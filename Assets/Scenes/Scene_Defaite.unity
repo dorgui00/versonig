@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playlist:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 5fc8e50ad61b8134497fc3518f5621b0, type: 3}
   audioSource: {fileID: 957601525}
 --- !u!82 &957601525
 AudioSource:
@@ -644,7 +644,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: ce6b1f8415bbe254da7a99535b49959f, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 0
   Mute: 0
