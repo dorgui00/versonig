@@ -1,9 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health = 3;  
-   
+    public int health = 3; 
+    public string debut;
+
+
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -11,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (health <= 0)
         {
+            SceneManager.LoadScene(debut);
             Die();  
         }
     }
