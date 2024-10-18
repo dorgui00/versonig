@@ -34,13 +34,16 @@ public class EnemyShooter : MonoBehaviour
             // Wait for the shoot interval only if canShoot is true
             if (canShoot)
             {
-                // Trigger shooting animation
-                if (animator != null)
-                {
-                    animator.SetTrigger("Shoot");
-                }
+
+
+                animator.SetBool("tire", true);
+
 
                 yield return new WaitForSeconds(shootInterval);
+
+               
+
+                
 
                 // Instantiate and shoot the projectile
                 GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
@@ -49,6 +52,10 @@ public class EnemyShooter : MonoBehaviour
                 {
                     rb.velocity = Vector2.down * projectileSpeed;
                 }
+                animator.SetBool("tire", false);
+
+                yield return new WaitForSeconds(shootInterval);
+
             }
             else
             {
