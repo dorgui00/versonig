@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  debut: 
 --- !u!50 &8184339614547688762
 Rigidbody2D:
   serializedVersion: 4
