@@ -2222,7 +2222,8 @@ PrefabInstance:
       propertyPath: menuMort
       value: 
       objectReference: {fileID: 2075978559}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4845364111037902631, guid: 2264ef3f917d47b46aeceb92f5afb3c4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
